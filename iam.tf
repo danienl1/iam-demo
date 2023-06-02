@@ -61,7 +61,15 @@ data "aws_iam_policy_document" "infosec" {
       "ec2:RebootInstances",
       "ec2:TerminateInstances",
       "ec2:RunInstances",
-      "iam:*"
+      "iam:CreateUser",
+      "iam:DeleteUser",
+      "iam:CreateAccessKey",
+      "iam:DeleteAccessKey",
+      "iam:CreateUserPolicy",
+      "iam:DeleteUserPolicy",
+      "iam:AddUserToGroup",
+      "iam:RemoveUserFromGroup",
+      "iam:GetGroup"
     ]
     resources = ["*"]
   }
