@@ -14,4 +14,6 @@ pip install aws-mfa
 ```javascript
 login_aws
 assume_role infosec
+unset_role
+assume_role dev
 ```
